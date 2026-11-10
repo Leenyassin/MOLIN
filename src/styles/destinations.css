@@ -1,0 +1,277 @@
+/* Destinations Page */
+
+.destinations-page {
+    background-color: #f8f7f1;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+
+.destinations-hero {
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destinations-hero-content {
+    width: 100%;
+    max-width: 750px;
+}
+
+.destinations-hero-content h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.destinations-hero-content p {
+    color: white;
+    font-size: 17px;
+    margin: 0 0 30px;
+}
+
+/* Search Bar */
+
+.destinations-search {
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 22px;
+    height: 58px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.destinations-search svg {
+    color: #526c50;
+    font-size: 25px;
+}
+
+.destinations-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #344c36;
+    width: 100%;
+}
+
+.destinations-search input::placeholder {
+    color: #92998e;
+}
+
+/* Countries Section */
+
+.destinations-container {
+    padding: 45px 7%;
+}
+
+.destinations-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.destinations-heading h2 {
+    color: #344c36;
+    font-size: 32px;
+    margin: 0 0 12px;
+}
+
+.destinations-heading p {
+    color: #7b8576;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Country Cards */
+
+.destinations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.destination-country-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 220px;
+    border: 1px solid #e9ebdf;
+    box-shadow: 0 5px 18px rgba(54, 75, 54, 0.06);
+    transition: 0.3s;
+}
+
+.destination-country-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(54, 75, 54, 0.12);
+}
+
+.destination-country-image {
+    width: 38%;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.destination-country-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-country-info {
+    padding: 30px 40px;
+    flex: 1;
+}
+
+.destination-country-info h3 {
+    color: #344c36;
+    font-size: 29px;
+    margin: 0 0 12px;
+}
+
+.destination-country-info p {
+    color: #7b8576;
+    font-size: 15px;
+    margin: 0 0 22px;
+}
+
+.destination-view-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #526c50;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.destination-view-button:hover {
+    background-color: #344c36;
+}
+
+.destination-view-button svg {
+    font-size: 19px;
+}
+
+/* No Results */
+
+.no-destinations {
+    text-align: center;
+    padding: 60px 20px;
+    color: #647461;
+}
+
+.no-destinations h3 {
+    font-size: 24px;
+    color: #344c36;
+    margin-bottom: 10px;
+}
+
+.no-destinations p {
+    font-size: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .destinations-hero {
+        min-height: 300px;
+    }
+
+    .destinations-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .destinations-hero-content p {
+        font-size: 14px;
+    }
+
+    .destinations-container {
+        padding: 35px 5%;
+    }
+
+    .destinations-heading h2 {
+        font-size: 27px;
+    }
+
+    .destination-country-card {
+        min-height: 170px;
+    }
+
+    .destination-country-image {
+        width: 40%;
+        height: 170px;
+    }
+
+    .destination-country-info {
+        padding: 20px;
+    }
+
+    .destination-country-info h3 {
+        font-size: 22px;
+    }
+
+    .destination-country-info p {
+        font-size: 13px;
+    }
+
+    .destination-view-button {
+        padding: 10px 15px;
+        font-size: 12px;
+        gap: 7px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .destinations-hero {
+        min-height: 260px;
+    }
+
+    .destinations-hero-content h1 {
+        font-size: 29px;
+    }
+
+    .destinations-search {
+        height: 50px;
+        padding: 8px 15px;
+    }
+
+    .destinations-search input {
+        font-size: 14px;
+    }
+
+    .destination-country-card {
+        flex-direction: column;
+    }
+
+    .destination-country-image {
+        width: 100%;
+        height: 190px;
+    }
+
+    .destination-country-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px;
+    }
+
+    .destination-country-info h3 {
+        font-size: 24px;
+    }
+}

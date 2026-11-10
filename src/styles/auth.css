@@ -1,0 +1,473 @@
+/* AUTH PAGE */
+
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 35px 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Top Link */
+
+.auth-top-link {
+    position: absolute;
+    top: 35px;
+    right: 4%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #173f32;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.auth-top-link button {
+    background-color: #174b3d;
+    color: #fffdf5;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Main Content */
+
+.auth-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 45px;
+}
+
+/* Left Branding */
+
+.auth-brand {
+    text-align: center;
+    color: #173f32;
+    padding: 30px;
+}
+
+.auth-brand-logo h1 {
+    font-family: Georgia, serif;
+    font-size: 90px;
+    letter-spacing: 12px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.auth-brand-logo p {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Form Card */
+
+.auth-card {
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
+    background-color: rgba(255, 248, 238, 0.95);
+    border-radius: 25px;
+    padding: 65px 55px 35px;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(40, 50, 40, 0.12);
+    text-align: center;
+    overflow: hidden;
+}
+
+.auth-card h2 {
+    font-family: Georgia, serif;
+    color: #173f32;
+    font-size: 34px;
+    margin: 0 0 8px;
+}
+
+.auth-subtitle {
+    color: #283c32;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    margin: 0;
+}
+
+.auth-card-decoration {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 90px;
+    color: rgba(49, 91, 77, 0.15);
+}
+
+.auth-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #174b3d;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.auth-heart span {
+    width: 95px;
+    height: 1px;
+    background-color: #a9a99b;
+}
+
+/* Inputs */
+
+.auth-input {
+    width: 100%;
+    height: 53px;
+    border: 1px solid #dedbd2;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 18px;
+    margin-bottom: 14px;
+    color: #174b3d;
+}
+
+.auth-input svg {
+    font-size: 23px;
+    flex-shrink: 0;
+}
+
+.auth-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.auth-input input::placeholder {
+    color: #777;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    color: #777;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Terms */
+
+.auth-terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    text-align: left;
+    color: #333;
+    font-size: 12px;
+    margin: 18px 0;
+    line-height: 1.7;
+}
+
+.auth-terms input {
+    width: 18px;
+    height: 18px;
+    accent-color: #174b3d;
+    flex-shrink: 0;
+}
+
+.auth-terms a {
+    color: #174b3d;
+}
+
+/* Message */
+
+.auth-message {
+    color: #a33b32;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* Submit */
+
+.auth-submit {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: #174b3d;
+    color: #fffdf5;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-submit:hover {
+    background-color: #2d6a55;
+}
+
+/* Or Continue */
+
+.auth-or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    margin: 25px 0 18px;
+}
+
+.auth-or span {
+    flex: 1;
+    height: 1px;
+    background-color: #aaa99e;
+}
+
+/* Social Buttons */
+
+.auth-social {
+    display: flex;
+    gap: 12px;
+}
+
+.auth-social button {
+    flex: 1;
+    height: 48px;
+    border: 1px solid #d5d0c7;
+    border-radius: 30px;
+    background: transparent;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.auth-social button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.auth-social svg {
+    font-size: 23px;
+}
+
+.apple-symbol {
+    color: #111;
+    font-size: 20px;
+}
+
+/* Bottom Link */
+
+.auth-bottom-link {
+    margin-top: 25px;
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.auth-bottom-link button {
+    border: none;
+    background: transparent;
+    color: #174b3d;
+    text-decoration: underline;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+
+    .auth-page {
+        padding: 100px 4% 35px;
+    }
+
+    .auth-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .auth-brand-logo h1 {
+        font-size: 65px;
+    }
+
+    .auth-brand-logo p {
+        font-size: 18px;
+    }
+
+    .auth-card {
+        padding: 55px 30px 30px;
+    }
+
+    .auth-card h2 {
+        font-size: 27px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .auth-page {
+        min-height: 100vh;
+        padding: 100px 15px 35px;
+        background-position: center;
+    }
+
+    .auth-top-link {
+        top: 20px;
+        right: 15px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .auth-top-link button {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+    .auth-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .auth-brand {
+        padding: 10px 5px;
+    }
+
+    .auth-brand-logo h1 {
+        font-size: 48px;
+        letter-spacing: 7px;
+    }
+
+    .auth-brand-logo p {
+        font-size: 14px;
+    }
+
+    .auth-card {
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 45px 22px 25px;
+        border-radius: 20px;
+    }
+
+    .auth-card h2 {
+        font-size: 25px;
+    }
+
+    .auth-subtitle {
+        font-size: 13px;
+    }
+
+    .auth-heart {
+        font-size: 28px;
+        margin: 12px 0;
+    }
+
+    .auth-heart span {
+        width: 65px;
+    }
+
+    .auth-input {
+        height: 49px;
+        border-radius: 15px;
+        padding: 0 13px;
+        gap: 10px;
+        margin-bottom: 11px;
+    }
+
+    .auth-input input {
+        font-size: 13px;
+    }
+
+    .auth-terms {
+        font-size: 10px;
+    }
+
+    .auth-submit {
+        height: 50px;
+        font-size: 19px;
+    }
+
+    .auth-or {
+        font-size: 12px;
+        margin: 20px 0 15px;
+    }
+
+    .auth-social button {
+        height: 43px;
+        font-size: 12px;
+    }
+
+    .auth-bottom-link {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+/* Desktop Auth Page Position Adjustments */
+
+@media screen and (min-width: 901px) {
+
+    /* Move MOLIN branding upwards */
+
+    .auth-brand {
+        transform: translateY(-120px);
+    }
+
+    /* Move Sign Up card slightly down */
+
+    .auth-card {
+        transform: translateY(30px);
+    }
+
+    /* Keep Login link above the card */
+
+    .auth-top-link {
+        top: 20px;
+    }
+}
+
+/* Mobile Position Adjustments */
+
+@media screen and (max-width: 600px) {
+
+    .auth-brand {
+        transform: translateY(0);
+    }
+
+    .auth-card {
+        transform: translateY(0);
+    }
+}

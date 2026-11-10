@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 96%;
+  max-width: 1500px;
+  min-height: 112px;
+  margin: 28px auto 0;
+  padding: 12px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(248, 245, 239, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 35px;
+
+  box-shadow: 0 5px 20px rgba(30, 55, 45, 0.12);
+
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 240px;
+  color: #214b3a;
+  text-decoration: none;
+}
+
+.logo-design {
+  position: relative;
+  height: 43px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-mountain {
+  font-size: 58px !important;
+}
+
+.logo-plane {
+  position: absolute;
+  top: -8px;
+  right: -18px;
+  font-size: 28px !important;
+  transform: rotate(-15deg);
+}
+
+.logo-text h2 {
+  margin: -2px 0 0;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: 3px;
+  color: #214b3a;
+}
+
+.logo-text p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #345b49;
+  text-align: center;
+}
+
+/* Navigation Links */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.nav-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 15px 8px;
+  color: #254a3b;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.nav-link svg {
+  font-size: 27px;
+}
+
+.nav-link:hover {
+  color: #78917f;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #244b3a;
+  border-radius: 5px;
+}
+
+/* Right Buttons */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 14px 25px;
+
+  background-color: #214b3a;
+  color: white;
+
+  border-radius: 35px;
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #426b55;
+}
+
+.signup-button svg {
+  font-size: 24px;
+}
+
+.navbar-divider {
+  width: 2px;
+  height: 48px;
+  background-color: #365746;
+}
+
+.profile-button {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e8e4d9;
+  color: #244b3a;
+
+  border: 2px solid #d5d2c7;
+  border-radius: 50%;
+
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.profile-button:hover {
+  background-color: #d8e1d8;
+}
+
+.profile-button svg {
+  font-size: 35px;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #244b3a;
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1050px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar-logo {
+    min-width: 190px;
+  }
+
+  .logo-text h2 {
+    font-size: 32px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .navbar-actions {
+    gap: 12px;
+  }
+
+  .signup-button {
+    padding: 12px 17px;
+    font-size: 15px;
+  }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 700px) {
+
+  .navbar {
+    width: 94%;
+    min-height: 78px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+
+  .navbar-logo {
+    min-width: auto;
+    align-items: flex-start;
+  }
+
+  .logo-design {
+    height: 27px;
+    margin-left: 10px;
+  }
+
+  .logo-mountain {
+    font-size: 38px !important;
+  }
+
+  .logo-plane {
+    font-size: 19px !important;
+    right: -13px;
+  }
+
+  .logo-text h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .logo-text p {
+    font-size: 8px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .signup-button {
+    padding: 10px 13px;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .signup-button svg {
+    font-size: 19px;
+  }
+
+  .navbar-divider {
+    height: 35px;
+  }
+
+  .profile-button {
+    width: 39px;
+    height: 39px;
+  }
+
+  .profile-button svg {
+    font-size: 25px;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+
+    top: 88px;
+    left: 0;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+
+    padding: 15px;
+    background-color: #f8f3eb;
+
+    border: 1px solid #e5dfd3;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(30, 55, 45, 0.12);
+  }
+
+  .navbar-links.show-menu {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+}
+
+/* Small Mobile */
+
+@media screen and (max-width: 380px) {
+
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .logo-text h2 {
+    font-size: 21px;
+  }
+
+  .logo-text p {
+    font-size: 7px;
+  }
+
+  .signup-button span {
+    display: none;
+  }
+
+  .signup-button {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+
+  .navbar-divider {
+    height: 30px;
+  }
+
+}

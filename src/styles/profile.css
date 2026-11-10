@@ -1,0 +1,329 @@
+.profile-page {
+    background-color: #f8f7f1;
+    min-height: 100vh;
+    padding: 40px 6%;
+    font-family: inherit;
+}
+
+/* Welcome Section */
+
+.profile-welcome {
+    background: #e8ebdf;
+    border-radius: 25px;
+    padding: 45px 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(54, 75, 54, 0.06);
+}
+
+.welcome-icon {
+    width: 115px;
+    height: 115px;
+    min-width: 115px;
+    border-radius: 50%;
+    background-color: #f8f7f1;
+    color: #526c50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-icon svg {
+    font-size: 48px;
+}
+
+.welcome-text h1 {
+    color: #344c36;
+    font-size: 38px;
+    margin: 0 0 12px;
+}
+
+.welcome-text p {
+    color: #647461;
+    font-size: 17px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Your Destination Card */
+
+.profile-destination-card {
+    min-height: 380px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #536d55, #82927a);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0 6px 20px rgba(54, 75, 54, 0.12);
+}
+
+.profile-destination-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 550px;
+}
+
+.profile-destination-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.profile-destination-content h2 {
+    font-size: 48px;
+    margin: 0 0 15px;
+}
+
+.profile-destination-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    color: #f0f1e9;
+}
+
+/* Airplane Decoration */
+
+.profile-destination-decoration {
+    position: absolute;
+    right: 9%;
+    bottom: 12%;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.profile-destination-decoration svg {
+    font-size: 65px;
+}
+
+/* Travel Collection */
+
+.travel-collection {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.collection-heading {
+    margin-bottom: 25px;
+}
+
+.collection-heading h2 {
+    color: #344c36;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.collection-heading p {
+    color: #647461;
+    font-size: 16px;
+    margin: 0;
+}
+
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.collection-card {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 30px 25px;
+    min-height: 210px;
+    box-shadow: 0 5px 18px rgba(54, 75, 54, 0.07);
+    border: 1px solid #e9ebdf;
+    transition: 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(54, 75, 54, 0.12);
+}
+
+.collection-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    background-color: #e8ebdf;
+    color: #526c50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.collection-icon svg {
+    font-size: 32px;
+}
+
+.collection-card h3 {
+    color: #344c36;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.collection-card p {
+    color: #7b8576;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Login Message */
+
+.profile-card {
+    background-color: #e8ebdf;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: #344c36;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .profile-page {
+        padding: 25px 5%;
+    }
+
+    .profile-welcome {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .welcome-icon {
+        width: 85px;
+        height: 85px;
+        min-width: 85px;
+    }
+
+    .welcome-icon svg {
+        font-size: 38px;
+    }
+
+    .welcome-text h1 {
+        font-size: 27px;
+    }
+
+    .welcome-text p {
+        font-size: 15px;
+    }
+
+    .profile-destination-card {
+        min-height: 300px;
+        padding: 30px 25px;
+    }
+
+    .profile-destination-content h2 {
+        font-size: 34px;
+    }
+
+    .profile-destination-content p {
+        font-size: 15px;
+    }
+
+    .profile-destination-decoration {
+        right: 7%;
+        bottom: 8%;
+    }
+
+    .profile-destination-decoration svg {
+        font-size: 48px;
+    }
+
+    .collection-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .collection-heading h2 {
+        font-size: 25px;
+    }
+
+    .collection-card {
+        min-height: 180px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .welcome-text h1 {
+        font-size: 24px;
+    }
+
+    .profile-destination-content h2 {
+        font-size: 29px;
+    }
+
+    .profile-destination-card {
+        min-height: 270px;
+    }
+
+    .profile-destination-decoration svg {
+        font-size: 40px;
+    }
+
+    .collection-heading h2 {
+        font-size: 23px;
+    }
+
+    .collection-heading p {
+        font-size: 14px;
+    }
+
+    .collection-card h3 {
+        font-size: 19px;
+    }
+}
+.profile-destination-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-destination-card {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.profile-destination-content h2,
+.profile-destination-content p,
+.profile-destination-label {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-destination-card:has([href="/destinations"]) {
+    background-color: #e8ebdf;
+}
+
+.profile-select-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
+    text-decoration: none;
+    background-color: #526c50;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.select-destination-button.selected {
+    background-color: #526c50;
+    color: white;
+}
