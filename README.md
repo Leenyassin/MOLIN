@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MOLIN – Travel Guide Website
 
-## Available Scripts
+**MOLIN (Memories Of Life In Nature)** is a React-based travel guide website designed to help users explore destinations, discover interesting places, and find travel inspiration.
 
-In the project directory, you can run:
+## About the Project
 
-### `npm start`
+MOLIN provides travel information about six destinations:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Italy
+- Switzerland
+- France
+- Greece
+- Japan
+- Lebanon
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users can explore destinations, discover hotels, restaurants, and attractions, save their favorite places, and get personalized destination recommendations through the Trip Finder quiz.
 
-### `npm test`
+## Website Pages and Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home:** Introduces MOLIN and displays popular destinations and travel inspiration.
+- **Destinations:** Displays the available countries and allows users to search for destinations.
+- **Destination Details:** Provides information about each country, including hotels, restaurants, and attractions.
+- **Trip Finder:** Offers a quiz that recommends a destination based on the user's preferences.
+- **Favorites:** Allows users to save and organize their favorite places.
+- **Profile:** Displays the user's profile, selected destinations, and saved places.
+- **Sign Up and Login:** Provides frontend authentication.
+- **About:** Introduces the MOLIN project.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- React Context API
+- React Hooks (`useState`, `useEffect`, `useContext`)
+- Local Storage
+- Material UI Icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+MOLIN/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.js
+│   └── index.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-### `npm run eject`
+## How to Run the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/Leenyassin/MOLIN.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Open the project folder:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   cd MOLIN
+   ```
 
-## Learn More
+3. Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server:
 
-### Code Splitting
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Open `http://localhost:3000` in your browser.
 
-### Analyzing the Bundle Size
+## Project Status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Phase 1 – Frontend Development**
 
-### Making a Progressive Web App
+This phase focuses on the website interface, navigation, destination information, user interactions, frontend authentication, and Local Storage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Source Code Repository
 
-### Advanced Configuration
+[https://github.com/Leenyassin/MOLIN](https://github.com/Leenyassin/MOLIN)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+**Leen Yassin**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CSCI426 – Web Advanced
